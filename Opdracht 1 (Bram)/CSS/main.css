@@ -14,4 +14,10 @@ p {
   text-align: center;
   text-shadow: -1.25px -1.25px 0 white, 1.25px -1.25px 0 white, -1.25px 1.25px 0 white, 1.25px 1.25px 0 white;
 }
+
+ h6 {
+   font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
 }
