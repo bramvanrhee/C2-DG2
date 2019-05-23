@@ -1,21 +1,33 @@
 body {
-  background-color: lightgrey;
+  background-color: darkgrey;
 }
 
 td {
   background-color: black;
   height: 150px;
   width: 150px;
+  border: 0.5px solid red;
 }
 
 p {
+  color: black;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  text-shadow: -1.25px -1.25px 0 white, 1.25px -1.25px 0 white, -1.25px 1.25px 0 white, 1.25px 1.25px 0 white;
+  text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
 }
 
 img {
   height: 145px;
   width: 150px;
+}
+
+.img1 {
+  height: 60px;
+  width: 60px;
+}
+
+.img2 {
+  height: 65px;
+  width: 65px;
 }
