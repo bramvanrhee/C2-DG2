@@ -6,10 +6,10 @@ function beurt() {
   }
   else {
     if (speler) {
-      this.innerHTML = '<h6>X</h6>';
+      this.innerHTML = '<img src="IMG/x.png">';
     }
     else {
-      this.innerHTML = '<h6>O</h6>';
+      this.innerHTML = '<img src="IMG/o.png">';
     }
     speler = !speler;
   }
