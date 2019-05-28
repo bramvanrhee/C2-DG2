@@ -44,3 +44,36 @@ $(".male").click(function(){
     $("input[type='date']").css("background-color","pink");
     $("textarea").css("background-color","pink");
   });
+  //Als je op submit klikt. (Testen of alles klopt)
+  $("#nedbutton").click(function(){
+    var name = $("#name").val();
+    var adres = $("#address").val();
+    var plaats = $("#place").val();
+    var postcode = $("#post").val();
+    var geboortedatum = $("#date").val();
+    var nationaliteit = $("#nation").val();
+    var beroep = $("#beroep").val();
+    if(!/^\D*$/.test(name)){
+      alert("Naam is niet correct");
+    }
+    if(!/^[a-zA-Z$]*\s[0-9]*$/.test(adres)){
+      alert("Adres is niet correct");
+    }
+    if(!/^[a-zA-z]*$/.test(plaats)){
+      alert("Plaats is niet correct");
+    }
+    if(!/^[0-9]{4}\s[a-zA-Z]{2}$/.test(postcode)){
+      alert("Postcode is niet correct");
+    }
+    if(/^\d{4}-\d{2}-\d{2}$/.test(geboortedatum)){
+      let age = getAge(geboortedatum);
+      $("#oud").text("Je wordt " + (age+=1) + " jaar oud");
+      $("#oud").fadeIn("slow");
+    }
+    if(!/^\D*$/.test(nationaliteit)){
+      alert("Nationaliteit is niet correct");
+    }
+    if(!/^\D*$/.test(beroep)){
+      alert("Beroep is niet correct");
+    }
+  });
