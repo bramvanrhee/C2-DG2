@@ -54,11 +54,50 @@
         </tr>
      </table>
      <input id="nedbutton" type="submit" value="Submit"></button>
-   </div>
+   </div> </form>
 
-  <div id="eng" hidden=true>
-    <h1> English form </h1>
-  </div>
+   <div id="eng" hidden=true>
+     <h1>Engelse formulier</h1>
+     <form method="post" onsubmit="return false">
+       <input class="male" type="radio" name="Gender" value="Male">Mr.</input>
+       <input class="female" type="radio" name="Gender" value="Female">Miss.</input><br/>
+       <table>
+         <tr>
+           <td id="8" class="engtext"></td>
+           <td class="input"><input type="text" id="engname" name="naam" required/></td>
+         </tr>
+         <tr>
+           <td id="9" class="engtext"></td>
+           <td class="input"><input type="text" id="engaddress" name="adres" required/></td>
+         </tr>
+         <tr>
+           <td id="10" class="engtext"></td>
+           <td class="input"><input type="text" id="engplace" name="woonplaats" required/></td>
+         </tr>
+         <tr>
+           <td id="11" class="engtext"></td>
+           <td class="input"><input type="text" id="engpost" name="postcode" required/></td>
+         </tr>
+         <tr>
+           <td id="12" class="engtext"></td>
+           <td class="input"><input type="date" id="engdate" name="geboortedatum" required/> <span id="engoud" hidden=true/></td>
+         </tr>
+         <tr>
+           <td id="13" class="engtext"></td>
+           <td class="input"><input type="text" id="engnation" name="Nation" required/></td>
+         </tr>
+         <tr>
+           <td id="14" class="engtext"></td>
+           <td class="input"><input type="text" id="engberoep"name="work" required/></td>
+         </tr>
+         <tr>
+           <td id="15" class="engtext"></td>
+           <td class="input"><textarea id="engopmerking" name="comments"></textarea></td>
+         </tr>
+       </table>
+       <input id="engbutton" type="submit" value="Submit"></input>
+     </form>
+   </div>
 </body>
 <script src="Javascript/opdracht4.js"></script>
 </html>

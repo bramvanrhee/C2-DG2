@@ -1,6 +1,6 @@
 //Verschillende namen voor de Array (Zodat dat goed op het formulier kan staan)
 var veldenNed = ["Naam:","Adres:","Woonplaats:", "Postcode:", "Geboortedatum:", "Nationaliteit:", "Beroep:", "Opmerkingen: "];
-var veldenEng = ["Name:","Address:","Residence:","Postcode:","Date of Birth:","Nationality:","Work:", "Comments: "];
+var veldenEng = ["Name:","Address:","Residence:","Postalcode:","Date of Birth:","Nationality:","Work:", "Comments: "];
 //Functie om leeftijd te berekenen
 function getAge(dateString) {
     var today = new Date();
@@ -75,5 +75,39 @@ $(".male").click(function(){
     }
     if(!/^\D*$/.test(beroep)){
       alert("Beroep is niet correct");
+    }
+  });
+  $("#engbutton").click(function(){
+    var engname = $("#engname").val();
+    var engadres = $("#engaddress").val();
+    var engplaats = $("#engplace").val();
+    var engpostcode = $("#engpost").val();
+    var enggeboortedatum = $("#engdate").val();
+    var engnationaliteit = $("#engnation").val();
+    var engberoep = $("#engberoep").val();
+    if(!/^\D*$/.test(engname)){
+      alert("Name is not correct");
+    }
+    if (!/^\d+\s[A-z]+\s[A-z]+$/.test(engadres)){
+      alert("Address is not correct");
+    }
+    if(!/^[a-zA-z]*$/.test(engplaats)){
+      alert("Residence is not correct");
+    }
+    if(!/[A-Z]{1,2}[0-9][0-9A-Z]?\s?[0-9][A-Z]{2}/.test(engpostcode)){
+      alert("Postalcode is not correct");
+    }
+    if(/^\d{4}-\d{2}-\d{2}$/.test(enggeboortedatum)){
+      let age = getAge(enggeboortedatum);
+      $("#engoud").text("You'll be  " + (age+=1) + " years old");
+      $("#engoud").fadeIn("slow");
+    }else{
+      alert("Date Of Birth is not correct");
+    }
+    if(!/^\D*$/.test(engnationaliteit)){
+      alert("Nationality is not correct");
+    }
+    if(!/^\D*$/.test(engberoep)){
+      alert("Work is not correct");
     }
   });
