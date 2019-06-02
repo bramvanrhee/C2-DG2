@@ -38,6 +38,10 @@
   font-weight: bold;
 }
 
+.text2 {
+  font-size: 20px;
+}
+
 input[type=text] {
   border: 5px solid lightgrey;
   width: 450px;
