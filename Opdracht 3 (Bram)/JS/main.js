@@ -16,4 +16,12 @@ $(document).ready(function() {
     document.getElementById('b1').innerHTML = linksarray.join("");
     document.getElementById('b2').innerHTML = rechtsarray;
   });
+
+  $('#links').click(function() {
+    linksarray.push(rechtsarray.join(""));
+    linksarray.join("");
+    rechtsarray= [];
+    document.getElementById('b1').innerHTML = linksarray;
+    document.getElementById('b2').innerHTML = rechtsarray.join("");
+  });
 });
