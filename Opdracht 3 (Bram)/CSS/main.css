@@ -1,7 +1,13 @@
 #b1 {
+  border: 5px solid black;
   float: left;
+  width: 400px;
+  height: 550px;
 }
 
 #b2 {
+  border: 5px solid black;
   float: right;
+  width: 400px;
+  height: 550px;
 }
