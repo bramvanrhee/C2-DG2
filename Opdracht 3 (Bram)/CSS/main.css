@@ -1,3 +1,7 @@
+body {
+  background-color: #FBFCFC;
+}
+
 #b1 {
   border: 5px solid black;
   float: left;
