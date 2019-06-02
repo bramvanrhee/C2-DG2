@@ -11,3 +11,12 @@
   width: 400px;
   height: 550px;
 }
+
+.button {
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  width: 250px;
+  height: 70px;
+  font-size: 25px;
+  font-weight: bold;
+}
