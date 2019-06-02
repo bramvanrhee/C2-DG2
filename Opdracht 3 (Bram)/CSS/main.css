@@ -44,3 +44,8 @@ input[type=text] {
   height: 30px;
   margin-left: 150px;
 }
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
